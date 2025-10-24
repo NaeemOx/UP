@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturing Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">📊</div>
+                    <span>Manufacturing Management</span>
+                </div>
+                <nav class="nav-tabs">
+                    <button class="nav-tab active" onclick="showView('dashboard'^)">Dashboard</button>
+                    <button class="nav-tab" onclick="showView('bom'^)">BOM Manager</button>
+                    <button class="nav-tab" onclick="showView('stages'^)">Stages</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content container">
+        <!-- Dashboard View -->
+        <div id="dashboard-view">
+            <!-- KPI Cards -->
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-content">
+                        <h3>Active Orders</h3>
+                        <div class="kpi-value" id="kpi-orders">0</div>
+                    </div>
+                    <div class="kpi-icon blue">📦</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-content">
+                        <h3>Total Cost</h3>
+                        <div class="kpi-value" id="kpi-cost">$0</div>
+                    </div>
+                    <div class="kpi-icon green">💰</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-content">
+                        <h3>Avg. Completion</h3>
+                        <div class="kpi-value" id="kpi-completion">0%</div>
+                    </div>
+                    <div class="kpi-icon purple">📈</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-content">
+                        <h3>Pending Stages</h3>
+                        <div class="kpi-value" id="kpi-pending">0</div>
+                    </div>
+                    <div class="kpi-icon orange">⏱️</div>
+                </div>
+            </div>
+
+            <!-- Orders List -->
+            <div class="orders-section">
+                <div class="section-header">
+                    <h2>Production Orders</h2>
+                </div>
+                <div id="orders-list"></div>
+            </div>
+        </div>
+
+        <!-- Order Detail View -->
+        <div id="order-detail-view" class="detail-page">
+            <button class="back-button" onclick="showView('dashboard'^)">← Back to Dashboard</button>
+            <div id="order-detail-content"></div>
+        </div>
+
+        <!-- BOM Manager View -->
+        <div id="bom-view" class="detail-page">
+            <div class="detail-card">
+                <h2>BOM Manager</h2>
+                <p>Create and manage Bill of Materials for products.</p>
+            </div>
+        </div>
+
+        <!-- Stages Designer View -->
+        <div id="stages-view" class="detail-page">
+            <div class="detail-card">
+                <h2>Stage Designer</h2>
+                <p>Design and customize production stages.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

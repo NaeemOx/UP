@@ -1,35 +1,48 @@
 # 🏭 Manufacturing Management System
 
-A comprehensive web-based production order tracking and manufacturing process management system.
+Pure HTML, CSS, JavaScript - No frameworks needed!
+
+## 🚀 Quick Start
+
+1. Open `index.html` in your browser
+2. That's it! No installation needed.
 
 ## ✨ Features
 
 - 📊 Real-time production dashboard
-- 📦 Production order tracking
+- 📦 Order tracking with progress
 - 🔧 BOM management
-- 💰 Cost calculation
-- 📱 Responsive design
+- 💰 Cost calculations
+- 📱 Fully responsive
 
-## 🚀 Quick Start
+## 📂 Project Structure
 
-### Frontend
-```bash
-cd frontend
-npm install
-npm start
+```
+manufacturing-system/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── app.js
+│   └── data.js
+└── README.md
 ```
 
-### Backend
+## 🌐 Deploy
+
+### GitHub Pages:
 ```bash
-cd backend
-npm install
-npm run dev
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin YOUR_REPO_URL
+git push -u origin main
 ```
 
-## 📖 Documentation
+Then enable GitHub Pages in repo settings.
 
-- [API Docs](docs/API.md)
-- [Setup Guide](docs/SETUP.md)
+### Netlify:
+Just drag and drop the folder to netlify.com
 
 ## 📝 License
 

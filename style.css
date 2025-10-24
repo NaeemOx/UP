@@ -1,0 +1,21 @@
+/* Manufacturing Management System */
+/* Copy CSS from the main HTML file or use the complete version */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3b82f6;
+    --success-color: #22c55e;
+    --gray-100: #f3f4f6;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--gray-100);
+}
+
+/* Add rest of the styles here */
